@@ -4,10 +4,15 @@ import java.util.Scanner;
 
 public class BeynelxalqGonderishHecmiQiymeti {
     public static void main(String[] args) {
+
+        System.out.println("--- Beynəlxalq Göndərişin Qiymətləndirilməsi ---");
         Scanner sc = new Scanner(System.in);
 
-        double en = sc.nextDouble();
+        System.out.println("Uzunluğu daxil edin (sm):");
         double uzunluq = sc.nextDouble();
+        System.out.println("Eni daxil edin (sm):");
+        double en = sc.nextDouble();
+        System.out.println("Hündürlüyü daxil edin (sm):");
         double hundurluk = sc.nextDouble();
 
         double gonderis_hecmi = en * uzunluq * hundurluk;
