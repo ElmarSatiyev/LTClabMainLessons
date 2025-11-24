@@ -17,7 +17,5 @@ public class RaketinUchushMesafesi {
 
         int R2 = (int) Math.round(R);
         System.out.println(R2);
-
-
     }
 }
