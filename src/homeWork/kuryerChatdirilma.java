@@ -7,34 +7,32 @@ public class kuryerChatdirilma {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Şəhər adını daxil edin: ");
-        String sheher =  sc.nextLine();
+        String sheher =  sc.nextLine().toLowerCase();;
         double sifarishMeblegi = sc.nextDouble();
-
+        double catdirilmaQiymeti = 0;
 
         switch(sheher) {
-            case "Bakı":
-                if (sifarishMeblegi>50) {
-                    System.out.println("Sizin çatdırılma xidmətiniz ödənişsiz olacaq.");
-                } else {
-                    System.out.println("Sizin çatdırılma xidmətinin qiyməti 5 AZN olacaq");
-                }
+            case "baki":
+                catdirilmaQiymeti = 5;
                 break;
-            case "Sumqayıt":
-                if (sifarishMeblegi>50) {
-                    System.out.println("Sizin çatdırılma xidmətiniz ödənişsiz olacaq.");
-                } else {
-                    System.out.println("Sizin çatdırılma xidmətinin qiyməti 7 AZN olacaq");
-                }
+            case "sumqayit":
+                catdirilmaQiymeti = 7;
                 break;
-            case "Xırdalan":
-                if (sifarishMeblegi>50) {
-                    System.out.println("Sizin çatdırılma xidmətiniz ödənişsiz olacaq.");
-                } else {
-                    System.out.println("Sizin çatdırılma xidmətinin qiyməti 6 AZN olacaq");
-                }
+            case "xirdalan":
+                catdirilmaQiymeti = 6;
                 break;
             default:
                 System.out.println("Çatdırılma xidməti yalnız Bakı, Sumqayıt və Xırdalan şəhərlərinə aiddir.");
         }
+
+
+        if  (sifarishMeblegi>=50) {
+            System.out.println("Sizin çatdırılma xidmətiniz ödənişsiz olacaq.");
+        } else {
+            System.out.println("Sizin çatdırılma xidmətinin qiyməti " + (int) catdirilmaQiymeti + " AZN olacaq.");
+        }
     }
 }
+
+
+
