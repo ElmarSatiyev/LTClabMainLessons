@@ -24,7 +24,7 @@ public class SaniyeleriZamanaChevirme {
             result += saniye + " saniyə";
         }
 
-        // Hamısı sıfır olarsa sadəcə "0 saniyə" çap edək
+        // Hamısı sıfır olarsa
         if (result.isEmpty()) {
             result = "0 saniyə";
         }
