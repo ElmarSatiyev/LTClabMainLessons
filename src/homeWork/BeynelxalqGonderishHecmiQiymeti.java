@@ -22,7 +22,5 @@ public class BeynelxalqGonderishHecmiQiymeti {
         System.out.println("Göndəriş həcmi: " + gonderis_hecmi);
         System.out.println("Həcm çəkisi: " + hecm_cekisi);
         System.out.println("Yekun qiymət: " + yekun_qiymet);
-
-
     }
 }

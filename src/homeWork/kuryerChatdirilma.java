@@ -6,8 +6,10 @@ public class kuryerChatdirilma {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        System.out.println("____Kuryer çatdırılma Xidməti___");
         System.out.println("Şəhər adını daxil edin: ");
-        String sheher =  sc.nextLine().toLowerCase();;
+        String sheher =  sc.nextLine().toLowerCase();
+
         double sifarishMeblegi = sc.nextDouble();
         double catdirilmaQiymeti = 0;
 
