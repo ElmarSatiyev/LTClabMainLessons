@@ -37,6 +37,9 @@ public class NationalPark {
             case 3:
                 System.out.println("Çətin rota");
                 break;
+            case 4:
+                System.out.println("Daha çətin rota");
+                break;
             default:
                 System.out.println("Yanlış marşrut seçimi ");
         }
