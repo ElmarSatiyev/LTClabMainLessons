@@ -8,10 +8,9 @@ public class MovieRating {
         System.out.println("Sevdiyiniz son filmə 1-dən 10-a qədər reytinq verin");
         int rating = sc.nextInt();
 
-        System.out.println(rating);
-        if  (rating<=4 && rating>=1) {
+        if  (  rating>=1 && rating<=4) {
             System.out.println("Çox pis qiymətləndirmə. Niyə belə bəyənmədiniz?");
-        } else if (rating<=5 && rating>=7) {
+        } else if (rating>=5 && rating<=7) {
             System.out.println("Orta qiymətləndirmə. Daha yaxşı filmlər tapaq!");
         } else if (rating<=10 && rating>=8) {
             System.out.println("Əla seçim! Bu filmi dostlarınıza tövsiyə etdiyinizə əmin olun.");
