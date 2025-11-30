@@ -6,9 +6,9 @@ public class ATM {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String passwordUser = "1234";
-        int attempt = 3;
+        int attempts = 3;
 
-        while (attempt<=3) {
+        while (true) {
             System.out.println("Sifreni daxil et: ");
             String password = input.nextLine();
             if (password.equals(passwordUser)) {
@@ -16,8 +16,8 @@ public class ATM {
                 break;
             } else  {
                 System.out.println("Yanlış PİN. Yenidən cəhd edin");
-                attempt--;
-                if (attempt==0) {
+                attempts--;
+                if (attempts==0) {
                     System.out.println("Kartınız bloklandı");
                     break;
                 }
